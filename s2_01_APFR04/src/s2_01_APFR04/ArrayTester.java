@@ -2,12 +2,18 @@ package s2_01_APFR04;
 
 import java.util.Arrays;
 
+/**
+ * 
+ * @author compsci
+ *
+ */
+
 public class ArrayTester {
 
 	
 	
 	
-/* 
+ /*
 // RETURN FALSE
 	static int[][] arr2D = { {0, 1, 2},
 					  {3, 4, 5},
@@ -16,12 +22,12 @@ public class ArrayTester {
 */
 	
 	
-/*
+
 // RETURN TRUE
 	static int[][] arr2D = {{1, 2, 3},
 			  				{2, 3, 1},
 			  				{3, 1, 2} };
-*/
+
 
 	
 
@@ -42,17 +48,16 @@ public class ArrayTester {
 */
 	
 	
-	
-
-// RETURN FALSE
-	static int[][] arr2D = {{1, 2},
-			  				{1, 2}};
 
 	/**
 	 * Returns an array containing the elements of column c of arr2D in the same
 	 * order as they appear in arr2d
 	 * Precondition: c is a valid column index in arr2D
 	 * Postcondition: arr2D is unchanged 
+	 * +1 point -- Constructs a new int array of size arr2D.length
+	 * +1 point -- Access all items in one column of arr2D
+	 * +1 point -- Assigns one element from arr2D to the corresponding element in the new array
+	 * +1 point -- ON EXIT: The new array has all the elements from the specified column in arr2D in the correct order
 	 */
 	
 	public static int[] getColumn(int[][] arr2D, int c) {
@@ -124,6 +129,11 @@ public class ArrayTester {
 	 * 		false otherwise 
 	 * Precondition: square has an equal number of rows and columns 
 	 * 				 square has at least one row
+	 * +1 point -- Calls containsDuplicates referencing a row or column of square
+	 * +1 point -- Calls hasAllValues referencing two different rows, two different columns, or one row and one column
+	 * +1 point -- Applies hasAllValues to all rows or all columns 
+	 * +1 point -- Calls getColumn to obtain a valid column from square
+	 * +1 point -- Returns true if all three Latin square conditions are satisfied, false otherwise
 	 */
 
 	public static boolean isLatin(int[][] square) {
@@ -152,5 +162,6 @@ public class ArrayTester {
 	}
 
 }
+
 
 
