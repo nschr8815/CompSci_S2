@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ListView2</string>
+
+    <string-array name="items">
+        <item>peach</item>
+        <item>tomato</item>
+        <item>squash</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>$0.99</item>
+        <item>$1.49</item>
+        <item>$0.89</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>some fresh peaches</item>
+        <item>some fresh tomatos</item>
+        <item>some fresh squash</item>
+    </string-array>
+</resources>
